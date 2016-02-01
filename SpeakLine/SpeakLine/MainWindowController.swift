@@ -22,7 +22,8 @@ class MainWindowController: NSWindowController {
         super.windowDidLoad()
         
         self.speechSynth.delegate = self
-        
+        self.window!.delegate = self
+        self.windowWillResize(self.window!, toSize: self.window!.frame.size)
         
     }
     @IBAction func speakIt(sender: NSButton) {
@@ -40,9 +41,19 @@ class MainWindowController: NSWindowController {
         print("stop button clicked")
         self.speechSynth.stopSpeaking()
     }
+    
+    
+    
 }
 
 
 extension MainWindowController:NSSpeechSynthesizerDelegate{
     
+}
+
+extension MainWindowController:NSWindowDelegate{
+    func windowWillResize(sender: NSWindow, toSize frameSize: NSSize) -> NSSize {
+        let targetWidth = frameSize.width
+        return NSSize(width: targetWidth, height: targetWidth / 2)
+    }
 }
