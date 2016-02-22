@@ -10,6 +10,8 @@ import Cocoa
 
 class Document: NSDocument {
     var employees: [Employee] = []
+    
+    
     override init() {
         super.init()
         // Add your subclass-specific initialization here.
@@ -18,6 +20,10 @@ class Document: NSDocument {
     override func windowControllerDidLoadNib(aController: NSWindowController) {
         super.windowControllerDidLoadNib(aController)
         // Add any code here that needs to be executed once the windowController has loaded the document's window.
+        
+        
+        
+        
     }
 
     override class func autosavesInPlace() -> Bool {
@@ -29,7 +35,36 @@ class Document: NSDocument {
         // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this property and override -makeWindowControllers instead.
         return "Document"
     }
-
+    
+    
+    
+    // MARK: - Accessors
+    func insertObject(employee: Employee, inEmployeesAtIndex index: Int) {
+        print("adding \(employee) to the employees array")
+        // Add the inverse of this operation to the undo stack
+        let undo: NSUndoManager = self.undoManager!
+        undo.prepareWithInvocationTarget(self).removeObjectFromEmployeesAtIndex(employees.count)
+        if !undo.undoing {
+        undo.setActionName("Add Person")
+        }
+        employees.append(employee)
+    }
+    func removeObjectFromEmployeesAtIndex(index: Int) {
+        let employee: Employee = employees[index]
+        print("removing \(employee) from the employees array")
+        // Add the inverse of this operation to the undo stack
+        let undo: NSUndoManager = self.undoManager!
+        undo.prepareWithInvocationTarget(self).insertObject(employee, inEmployeesAtIndex: index)
+        if !undo.undoing {
+            undo.setActionName("Remove Person")
+        }
+        // Remove the Employee from the array
+        employees.removeAtIndex(index)
+    }
+    
+    
+    
+    
 //    override func dataOfType(typeName: String) throws -> NSData {
 //        // Insert code here to write your document to data of the specified type. If outError != nil, ensure that you create and set an appropriate error when returning nil.
 //        // You can also choose to override fileWrapperOfType:error:, writeToURL:ofType:error:, or writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.

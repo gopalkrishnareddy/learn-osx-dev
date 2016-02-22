@@ -121,7 +121,11 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="ez2-bJ-bqf" name="value" keyPath="objectValue.raise" id="Er0-j6-fdS"/>
+                                                                <binding destination="ez2-bJ-bqf" name="value" keyPath="objectValue.raise" id="zcJ-58-F9b">
+                                                                    <dictionary key="options">
+                                                                        <bool key="NSValidatesImmediately" value="YES"/>
+                                                                    </dictionary>
+                                                                </binding>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
