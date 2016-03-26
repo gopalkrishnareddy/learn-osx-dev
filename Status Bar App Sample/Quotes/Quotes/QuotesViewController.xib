@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="QuotesViewController" customModule="Quotes" customModuleProvider="target">
+            <connections>
+                <outlet property="text" destination="WqO-RU-cdu" id="6nj-mo-VYf"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="355"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pq-rO-4hA">
+                    <rect key="frame" x="170" y="13" width="103" height="32"/>
+                    <buttonCell key="cell" type="push" title="退出Quote" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HxM-Te-10G">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didPressQuit:" target="-2" id="bS3-mV-lc7"/>
+                    </connections>
+                </button>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HCd-Im-t2a">
+                    <rect key="frame" x="20" y="110" width="35" height="135"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="1F8-qg-sLV"/>
+                        <constraint firstAttribute="height" constant="133" id="NzY-qk-8T8"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSGoLeftTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SvE-Ca-8Yb">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didPressLast:" target="-2" id="SSx-8Z-thH"/>
+                    </connections>
+                </button>
+                <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bEZ-Ep-SDT">
+                    <rect key="frame" x="387" y="110" width="35" height="135"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="133" id="2jR-pI-k6i"/>
+                        <constraint firstAttribute="width" constant="35" id="aLY-01-iIS"/>
+                    </constraints>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSGoRightTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7oD-cT-shz">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="didPressNext:" target="-2" id="Mfj-T6-hfu"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="WqO-RU-cdu">
+                    <rect key="frame" x="61" y="161" width="320" height="34"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Never put off until tomorrow what you can do the day after tomorrow" id="MtJ-1R-ArR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bEZ-Ep-SDT" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="2f8-Uh-OvP"/>
+                <constraint firstAttribute="trailing" secondItem="bEZ-Ep-SDT" secondAttribute="trailing" constant="20" id="9GF-ij-23k"/>
+                <constraint firstItem="HCd-Im-t2a" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="IXd-eC-ept"/>
+                <constraint firstItem="WqO-RU-cdu" firstAttribute="trailing" secondItem="bEZ-Ep-SDT" secondAttribute="leading" constant="-8" id="JRk-cD-0U3"/>
+                <constraint firstItem="WqO-RU-cdu" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="ZGP-Hf-lkE"/>
+                <constraint firstItem="HCd-Im-t2a" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="bk2-kt-zn5"/>
+                <constraint firstItem="WqO-RU-cdu" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="fgB-TQ-wgf"/>
+                <constraint firstItem="WqO-RU-cdu" firstAttribute="leading" secondItem="HCd-Im-t2a" secondAttribute="trailing" constant="8" id="mQt-nd-3lO"/>
+            </constraints>
+            <point key="canvasLocation" x="193" y="238.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+    </resources>
+</document>

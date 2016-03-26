@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84713B551CA6A59A001F4A4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84713B541CA6A59A001F4A4B /* AppDelegate.swift */; };
+		84713B571CA6A59A001F4A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84713B561CA6A59A001F4A4B /* Assets.xcassets */; };
+		84713B5A1CA6A59A001F4A4B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84713B581CA6A59A001F4A4B /* MainMenu.xib */; };
+		84713B651CA6A9E3001F4A4B /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84713B631CA6A9E3001F4A4B /* QuotesViewController.swift */; };
+		84713B661CA6A9E3001F4A4B /* QuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84713B641CA6A9E3001F4A4B /* QuotesViewController.xib */; };
+		84713B681CA6AB25001F4A4B /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84713B671CA6AB25001F4A4B /* Quote.swift */; };
+		84713B6A1CA6AFFE001F4A4B /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84713B691CA6AFFE001F4A4B /* EventMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84713B511CA6A59A001F4A4B /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84713B541CA6A59A001F4A4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84713B561CA6A59A001F4A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84713B591CA6A59A001F4A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		84713B5B1CA6A59A001F4A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84713B631CA6A9E3001F4A4B /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		84713B641CA6A9E3001F4A4B /* QuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesViewController.xib; sourceTree = "<group>"; };
+		84713B671CA6AB25001F4A4B /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		84713B691CA6AFFE001F4A4B /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84713B4E1CA6A59A001F4A4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84713B481CA6A59A001F4A4B = {
+			isa = PBXGroup;
+			children = (
+				84713B531CA6A59A001F4A4B /* Quotes */,
+				84713B521CA6A59A001F4A4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84713B521CA6A59A001F4A4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84713B511CA6A59A001F4A4B /* Quotes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84713B531CA6A59A001F4A4B /* Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				84713B671CA6AB25001F4A4B /* Quote.swift */,
+				84713B541CA6A59A001F4A4B /* AppDelegate.swift */,
+				84713B631CA6A9E3001F4A4B /* QuotesViewController.swift */,
+				84713B641CA6A9E3001F4A4B /* QuotesViewController.xib */,
+				84713B691CA6AFFE001F4A4B /* EventMonitor.swift */,
+				84713B561CA6A59A001F4A4B /* Assets.xcassets */,
+				84713B581CA6A59A001F4A4B /* MainMenu.xib */,
+				84713B5B1CA6A59A001F4A4B /* Info.plist */,
+			);
+			path = Quotes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84713B501CA6A59A001F4A4B /* Quotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84713B5E1CA6A59A001F4A4B /* Build configuration list for PBXNativeTarget "Quotes" */;
+			buildPhases = (
+				84713B4D1CA6A59A001F4A4B /* Sources */,
+				84713B4E1CA6A59A001F4A4B /* Frameworks */,
+				84713B4F1CA6A59A001F4A4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quotes;
+			productName = Quotes;
+			productReference = 84713B511CA6A59A001F4A4B /* Quotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84713B491CA6A59A001F4A4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "monk-studio";
+				TargetAttributes = {
+					84713B501CA6A59A001F4A4B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 84713B4C1CA6A59A001F4A4B /* Build configuration list for PBXProject "Quotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84713B481CA6A59A001F4A4B;
+			productRefGroup = 84713B521CA6A59A001F4A4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84713B501CA6A59A001F4A4B /* Quotes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84713B4F1CA6A59A001F4A4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84713B661CA6A9E3001F4A4B /* QuotesViewController.xib in Resources */,
+				84713B571CA6A59A001F4A4B /* Assets.xcassets in Resources */,
+				84713B5A1CA6A59A001F4A4B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84713B4D1CA6A59A001F4A4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84713B551CA6A59A001F4A4B /* AppDelegate.swift in Sources */,
+				84713B681CA6AB25001F4A4B /* Quote.swift in Sources */,
+				84713B651CA6A9E3001F4A4B /* QuotesViewController.swift in Sources */,
+				84713B6A1CA6AFFE001F4A4B /* EventMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84713B581CA6A59A001F4A4B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84713B591CA6A59A001F4A4B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84713B5C1CA6A59A001F4A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84713B5D1CA6A59A001F4A4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84713B5F1CA6A59A001F4A4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Quotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monk-studio.Quotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84713B601CA6A59A001F4A4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Quotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.monk-studio.Quotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84713B4C1CA6A59A001F4A4B /* Build configuration list for PBXProject "Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84713B5C1CA6A59A001F4A4B /* Debug */,
+				84713B5D1CA6A59A001F4A4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84713B5E1CA6A59A001F4A4B /* Build configuration list for PBXNativeTarget "Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84713B5F1CA6A59A001F4A4B /* Debug */,
+				84713B601CA6A59A001F4A4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84713B491CA6A59A001F4A4B /* Project object */;
+}
