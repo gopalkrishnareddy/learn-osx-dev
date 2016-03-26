@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ImageViewController" customModule="ViewControl" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dsk-1h-Fs9">
+                    <rect key="frame" x="8" y="8" width="464" height="256"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="oJQ-9x-daV"/>
+                    <connections>
+                        <binding destination="-2" name="value" keyPath="image" id="R7x-ch-YHX"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dsk-1h-Fs9" secondAttribute="trailing" constant="8" id="Yo2-oh-7hM"/>
+                <constraint firstItem="dsk-1h-Fs9" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="8" id="eIk-q4-8Uv"/>
+                <constraint firstItem="dsk-1h-Fs9" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="uQw-VN-2uQ"/>
+                <constraint firstAttribute="bottom" secondItem="dsk-1h-Fs9" secondAttribute="bottom" constant="8" id="v8y-Cu-Wqu"/>
+            </constraints>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="nVH-az-jUD"/>
+    </objects>
+</document>
