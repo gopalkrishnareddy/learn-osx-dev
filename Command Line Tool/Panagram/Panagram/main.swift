@@ -24,3 +24,8 @@ if Process.argc < 2 {
 } else {
     panagram.staticMode()
 }
+
+// staticMode代表是一行执行.
+// interacctiveMode代表是持续执行.
+
+
